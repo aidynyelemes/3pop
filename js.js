@@ -49,11 +49,13 @@
   };
 
   const scrollTo = function () {
+    const menu = document.querySelector('.header__nav');
       const links = document.querySelectorAll('.js-scroll');
       links.forEach(each => {
           each.addEventListener('click', function () {
               const currentTarget = this.getAttribute('href');
               smoothScroll(currentTarget, 1000);
+              menu.classList.remove('header__nav__active'); 
           });
       });
   };
