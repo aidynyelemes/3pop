@@ -838,6 +838,13 @@ background-color: #FFFFFF;
 
 }
 
+.stands{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .menu__title{
     font-family: 'Cormorant Infant';
 font-style: normal;
@@ -1038,10 +1045,7 @@ color: #E1B168;
 }
 
 .offer__stands{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .popular__dishes{
@@ -1286,9 +1290,7 @@ border: 0;
 
 @media screen and (max-width: 815px){
 
-    .header__wrapper{
-        display: block;
-    }
+    
     .header__call{
         margin-bottom: 30px;
 
@@ -1298,10 +1300,85 @@ border: 0;
         margin-top: 0;
         margin-bottom: 30px;
     }
+    
+}
+
+@media screen and (max-width:800px ) {
+    .intro__logo-pic{
+        width: 100%;
+    }
+    .story__foto{
+        width: 100%;
+    }
+   
+}
+
+@media screen and (max-width:580px ) {
+    .intro__title{
+        font-size: 53px;
+        line-height: normal;
+    }
+    .intro__subtitle{
+        font-size: 15px;
+    }
+    .info__items{
+        display: block;
+    }
+    .info__text{
+        margin-left: 0;
+    }
+    .blog{
+        overflow-x:unset;
+    }
+    .reserv{
+        overflow-x:unset;
+      
+    }
+    
 }
 
 
+
 @media screen and (max-width: 824px) {
+
+    .header__logo-pic{
+        width: 100%;
+    }
+    .stands{
+        display: block;
+    }
+
+    .stand{
+        width: auto;
+    }
+
+    .offers__pic{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .header__wrapper{
+        text-align: center;
+            display: block;
+        
+    }
+
+    .header__call{
+        width: auto;
+    }
+
+    .header__res{
+        width: auto;
+    }
+    .menu__wrapper{
+        display: block;
+    }
+    .special{
+        width: 100%;
+    }
+    .menu__price{
+        width: 100%;
+    }
     .res__form__field{
         height: auto;
     }
